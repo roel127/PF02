@@ -1,2 +1,24 @@
 @use './variable' as *;
 @use './mixin' as *;
+
+header{
+  width: $size-content;
+  @include layout;
+  @include center;
+  padding: $size-large * 2;
+  h1{
+    width: $size-normal * 16;
+    img{
+      width: $size-full;
+    }
+  }
+  nav{
+    width: calc($size-content / 3);
+    ul{
+      @include layout;
+      a{
+        color: $color-black;
+      }
+    }
+  }
+}

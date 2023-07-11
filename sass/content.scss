@@ -1,2 +1,187 @@
 @use './variable' as *;
 @use './mixin' as *;
+
+#wrap{
+  .box01{
+    background-color: #161616;
+    figure{
+      width: $size-content;
+      // height: $size-normal * 49;
+      padding: $size-normal*7 0 $size-normal*4;
+      @include center;
+      @include layout($justify:center, $direction:row-reverse);
+      img{
+        width: calc($size-content / 2) ;
+      }
+      figcaption{
+        width: $size-large * 30;
+        // margin: 90px 0 0 0;
+        color: $color-white;
+        ul{
+          li{
+            &:nth-child(1){
+              font-size: $font-big;
+              margin-bottom: $size-large;
+              span{
+                color: $color-main;
+              }
+            }
+            &:nth-child(2){
+              margin-bottom: $size-normal * 5;
+              line-height: $size-normal * 2;
+            }
+            &:nth-child(3){
+              button{
+                width: $size-buttonW;
+                height: $size-buttonH;
+                border: none;
+                cursor: pointer;
+                &:first-child{
+                  background-color: transparent;
+                  color: $color-white;
+                }
+                &:last-child{
+                  background-color: $color-main;
+                  color: $color-basic;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .box02{
+    > div{
+      width: $size-content;
+      @include center;
+      padding: $size-large*4 0 $size-large*6;
+      h3{
+        font-size: $font-large;
+        position: relative;
+        margin-bottom: $size-large * 4;
+        span{
+          @include spanLine{
+            @include border;
+          }
+          &:nth-child(2){
+            width: $size-large * 2;
+            height: $size-large * 2;
+            @include border($size:3px, $color:$color-black)
+          }
+          &:nth-child(3){
+            width: $size-large * 2;
+            height: $size-large * 2;
+            left: $size-large * 2;
+            @include border($size:3px, $color:$color-main)
+          }
+        }
+      }
+      > div{
+        @include layout;
+        figure{
+          width: $size-figure;
+          img{
+            width: $size-full;
+            margin-bottom: $size-small * 5;
+          }
+          figcaption{
+            text-align: center;
+            dd{
+              &:nth-of-type(1){
+                color: $color-basic;
+                margin-bottom: $size-normal * 2;
+              }
+              &:nth-of-type(2){
+                color: $color-main;
+                margin-bottom: $size-normal * 2;
+              }
+              &:nth-of-type(3){
+                button{
+                  width: $size-buttonW;
+                  height: $size-buttonH;
+                  border: none;
+                  border-radius: $size-small;
+                  background-color: $color-main;
+                  &:hover{
+                    background-color: $color-basic;
+                    color: $color-white;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .box03{
+    background: url('../images/gucci.jpeg') no-repeat center / 100% 200%; 
+    padding: $size-normal*11 0 $size-normal*12;
+    > div{
+      width: $size-content;
+      @include center;
+      p{
+        color: $color-white;
+        &:nth-of-type(1){
+          font-size: $font-big;
+          margin-bottom: $size-large;
+        }
+        &:nth-of-type(2){
+          font-size: $font-large;
+          margin-bottom: $size-large * 2;
+        }
+        &:nth-of-type(3){
+          width: calc($size-content/2);
+          line-height: $size-normal * 2;
+          color: $color-basic;
+          margin-bottom: $size-normal * 4;
+        }
+      }
+      button{
+        width: $size-buttonW;
+        height: $size-buttonH;
+        background-color: $color-main;
+        border: none;
+        border-radius: $size-small;
+      }
+    }
+  }
+  .box04{
+    padding: $size-large*6 0;
+    > div{
+      width: $size-content;
+      @include center;
+      h3{
+        font-size: $font-large;
+        position: relative;
+        margin-bottom: $size-large * 4;
+        span{
+          @include spanLine{
+            @include border;
+          }
+        }
+      }
+      ul{
+        width: $size-normal * 43;
+        display: flex;
+        margin-bottom: $size-large * 3;
+        li{
+          padding: 0 $size-large*2;
+          &:first-child{
+            background-color: $color-main;
+          }
+          a{
+            font-size: $font-normal;
+            line-height: $size-large * 2;
+            color: $color-black;
+          }
+        }
+      }
+      > div{
+        @include layout;
+      }
+    }
+  }
+}
