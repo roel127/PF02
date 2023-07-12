@@ -2,6 +2,77 @@
 @use './mixin' as *;
 
 #wrap{
+  .list{
+    padding: $size-large*6 0;
+    > div{
+      width: $size-content;
+      @include center;
+      h3{
+        font-size: $font-large;
+        position: relative;
+        margin-bottom: $size-large * 4;
+        span{
+          @include spanLine{
+            @include border;
+          }
+        }
+      }
+      ul{
+        width: $size-normal * 43;
+        display: flex;
+        margin-bottom: $size-large * 3;
+        li{
+          padding: 0 $size-large*2;
+          &:first-child{
+            background-color: $color-main;
+          }
+          a{
+            font-size: $font-normal;
+            line-height: $size-large * 2;
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
+  .listForm{
+    @include layout;
+    figure{
+      width: $size-figure;
+      img{
+        width: $size-full;
+        margin-bottom: $size-small * 5;
+      }
+      figcaption{
+        text-align: center;
+        dd{
+          &:nth-of-type(1){
+            color: $color-basic;
+            margin-bottom: $size-normal * 2;
+          }
+          &:nth-of-type(2){
+            color: $color-main;
+            margin-bottom: $size-normal * 2;
+          }
+          &:nth-of-type(3){
+            button{
+              width: $size-buttonW;
+              height: $size-buttonH;
+              border: none;
+              border-radius: $size-small;
+              background-color: $color-main;
+              &:hover{
+                background-color: $color-basic;
+                color: $color-white;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .box01{
     background-color: #161616;
     figure{
@@ -77,43 +148,6 @@
           }
         }
       }
-      > div{
-        @include layout;
-        figure{
-          width: $size-figure;
-          img{
-            width: $size-full;
-            margin-bottom: $size-small * 5;
-          }
-          figcaption{
-            text-align: center;
-            dd{
-              &:nth-of-type(1){
-                color: $color-basic;
-                margin-bottom: $size-normal * 2;
-              }
-              &:nth-of-type(2){
-                color: $color-main;
-                margin-bottom: $size-normal * 2;
-              }
-              &:nth-of-type(3){
-                button{
-                  width: $size-buttonW;
-                  height: $size-buttonH;
-                  border: none;
-                  border-radius: $size-small;
-                  background-color: $color-main;
-                  &:hover{
-                    background-color: $color-basic;
-                    color: $color-white;
-                    cursor: pointer;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
   }
   .box03{
@@ -148,40 +182,90 @@
       }
     }
   }
-  .box04{
-    padding: $size-large*6 0;
-    > div{
+  .box04{}
+  .box05{
+    background-color: #4c4c4c;
+    padding: $size-large*3 0 $size-normal;
+    div{
       width: $size-content;
       @include center;
-      h3{
-        font-size: $font-large;
-        position: relative;
-        margin-bottom: $size-large * 4;
-        span{
-          @include spanLine{
-            @include border;
+      display: flex;
+      figure{
+        &:first-child{
+          width: $size-large * 46;
+          @include layout($justify:start);
+          margin-right: $size-large;
+          img{
+            width: 47%;
+            margin-right: $size-large;
           }
-        }
-      }
-      ul{
-        width: $size-normal * 43;
-        display: flex;
-        margin-bottom: $size-large * 3;
-        li{
-          padding: 0 $size-large*2;
-          &:first-child{
+          figcaption{
+            width: 50%;
+            color: $color-white;
+            p{
+              &:nth-child(1){
+                margin-bottom: $size-normal;
+              }
+              &:nth-child(2){
+                font:{
+                  size: $font-normal;
+                  weight: bold;
+                  margin-bottom: $size-large * 2;
+                };
+              }
+              &:nth-child(3){
+                font:{
+                  size: $font-big;
+                  weight: bold;
+                  margin-bottom: $size-large;
+                };
+                span{
+                  color: $color-main;
+                }
+              }
+              &:nth-child(4){
+                margin-bottom: $size-large * 2;
+              }
+            }
+          }
+          button{
+            width: $size-buttonW;
+            height: $size-buttonH;
             background-color: $color-main;
-          }
-          a{
-            font-size: $font-normal;
-            line-height: $size-large * 2;
-            color: $color-black;
+            border: none;
+            border-radius: $size-small;
           }
         }
-      }
-      > div{
-        @include layout;
+        &:last-child{
+          width: 40%;
+          position: relative;
+          img{
+            width: $size-full;
+          }
+          figcaption{
+            position: absolute;
+            top: 80%;
+            right: 0;
+            p{
+              &:first-child{
+                font:{
+                  size: $font-big;
+                  weight: bold;
+                };
+                line-height: $size-large * 2;
+                background-color: $color-white;
+              }
+              &:last-child{
+                display: inline-block;
+                font-size: $size-large;
+                line-height: $size-large * 2;
+                background-color: $color-main;
+              }
+            }
+          }
+        }
       }
     }
   }
+  .box06{}
 }

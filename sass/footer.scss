@@ -1,2 +1,50 @@
 @use './variable' as *;
 @use './mixin' as *;
+
+#footer{
+  aside{
+    background-color: $color-main;
+    padding: $size-large*4 0;
+    div{
+      width: $size-content;
+      @include center;
+      > p{
+        font-size: $font-big;
+        margin-bottom: $size-large * 3;
+        span{
+          font-weight: bold;
+        }
+      }
+      figure{
+        display: flex;
+        img{
+          width: 20%;
+          margin-right: $size-large * 3;
+        }
+        figcaption{
+          @include layout($justify:space-around,$align:start,$direction:column);
+          p{
+            width: 80%;
+            line-height: $size-normal * 2;
+          }
+          dl{
+            line-height: $size-normal * 2;
+            dt{
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    padding: $size-large*2 0;;
+    background-color: $color-footer;
+    small{
+      display: block;
+      width: $size-content;
+      @include center;
+      color: $color-basic;
+    }
+  }
+}
