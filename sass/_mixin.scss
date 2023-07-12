@@ -17,7 +17,7 @@
   height: $h;
   background-color: $color;
 }
-@mixin spanLine($w:358px,$h:31px,$top:0,$left:0){
+@mixin spanLine($w:358px,$h:31px,$top:0,$left:0,){
   position: absolute;
   top: $top;
   left: $left;
