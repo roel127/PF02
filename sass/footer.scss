@@ -11,6 +11,7 @@
       > p{
         font-size: $font-big;
         margin-bottom: $size-large * 3;
+        color: $color-white;
         span{
           font-weight: bold;
         }
@@ -26,9 +27,11 @@
           p{
             width: 80%;
             line-height: $size-normal * 2;
+            color: $color-white;
           }
           dl{
             line-height: $size-normal * 2;
+            color: $color-white;
             dt{
               font-weight: 600;
             }

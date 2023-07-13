@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="./sass/reset.scss">
    <link rel="stylesheet" href="./sass/main.scss">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <script src=""></script>
+   <script defer src="./script/main.js"></script>
    <title>PF02</title>
 </head>
  <body>
@@ -18,11 +18,11 @@
             <h2 class="hide">메인네비게이션</h2>
             <ul>
                <li><a href="#">Home</a></li>
-               <li><a href="#">Element</a></li>
-               <li><a href="#">Pages</a></li>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="#">Blog</a></li>
-               <li><a href="#">Shop</a></li>
+               <li><a href="#">Men</a></li>
+               <li><a href="#">Women</a></li>
+               <li><a href="#">New</a></li>
+               <li><a href="#">Beauty</a></li>
+               <li><a href="#">Gift</a></li>
                <li><a href="#">Contact</a></li>
             </ul>
          </nav>
@@ -33,11 +33,11 @@
                <img src="./images/new_main.avif" alt="banner image">
                <figcaption>
                   <ul>
-                     <li><span>NEW</span> <strong>COLLECTION</strong><br/>FOR WOMEN</li>
-                     <li>Big sale of women's bag from our store 30 % Save on all women's bag</li>
+                     <li><span>NEW</span> <strong>HANDBAG</strong></li>
+                     <li>익숙한 모양, 허나 돋보이는 손잡이, 깔끔함과 유니크함이 공존하는,<br/>새로이 출시된 다이애나 백을 만나볼 시간 </li>
                      <li>
                         <button type="button">GET STARTED</button>
-                        <button type="button">BUY NOW!</button>
+                        <button type="button">BUY NOW</button>
                      </li>
                   </ul>
                </figcaption>
@@ -56,9 +56,9 @@
                      <a href="#"><img src="./images/gift01.avif" alt="gift1"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>Special Gift1</dt>
+                           <dd>소중한 사람을 위한 특별한 선물</dd>
+                           <dd>$500 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -67,9 +67,9 @@
                      <a href="#"><img src="./images/gift02.avif" alt="gift2"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>Special Gift2</dt>
+                           <dd>소중한 사람을 위한 특별한 선물</dd>
+                           <dd>$500 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -78,9 +78,9 @@
                      <a href="#"><img src="./images/gift03.avif" alt="gift3"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>Special Gift3</dt>
+                           <dd>소중한 사람을 위한 특별한 선물</dd>
+                           <dd>$500 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -89,9 +89,9 @@
                      <a href="#"><img src="./images/gift04.avif" alt="gift4"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>Special Gift4</dt>
+                           <dd>소중한 사람을 위한 특별한 선물</dd>
+                           <dd>$500 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -101,9 +101,9 @@
          </section>
          <section class="box03">
             <div>
-               <p><sapn>New</sapn> Collection</p>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, deleniti. Praesentium, impedit.</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet corporis qui ratione eum impedit explicabo, deserunt vitae ab ut magni eius! Quos voluptatibus dolor aliquam aperiam. Velit, dicta veritatis.</p>
+               <p><sapn>70 YEARS</sapn> OF AN ICON</p>
+               <p>An immersive exhibition held at Spazio Maiocchi and curated by Alessio Ascari, celebrating 70 years of the House’s iconic Horsebit loafer.</p>
+               <p>Open to the public: 17-18 June 2023, 10am-6pm<br/>Spazio Maiocchi, Via Achille Maiocchi 7, 20129 Milan </p>
                <button type="button">View more</button>
             </div>
          </section>
@@ -115,29 +115,31 @@
                </h3>
                <ul>
                   <li><a href="#">Clothing</a></li>
-                  <li><a href="#">Footwear</a></li>
+                  <li><a href="#">Shoes</a></li>
+                  <li><a href="#">Wallet</a></li>
                   <li><a href="#">Watches</a></li>
-                  <li><a href="#">Sunglasses</a></li>
                </ul>
-               <div class="listForm">
+               <div class="listForm forMan">
+                   <!--   
                   <figure>
                      <a href="#"><img src="./images/man_top01.avif" alt="남성1"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>POLOS</dt>
+                           <dd>Style 111111</dd>
+                           <dd>$ 1,500 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
-                  </figure>
+                 </figure>
+
                   <figure>
-                     <a href="#"><img src="./images/man_top02.avif" alt="남성2"></a>
+                   <a href="#"><img src="./images/man_top02.avif" alt="남성2"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>POLOS</dt>
+                           <dd>Style 222222</dd>
+                           <dd>$ 1,200 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -146,9 +148,9 @@
                      <a href="#"><img src="./images/man_top03.avif" alt="남성3"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>POLOS</dt>
+                           <dd>Style 333333</dd>
+                           <dd>$ 1,500 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -157,13 +159,13 @@
                      <a href="#"><img src="./images/man_top04.avif" alt="남성4"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>POLOS</dt>
+                           <dd>style 444444</dd>
+                           <dd>$ 1,300 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
-                  </figure>
+                  </figure> -->
                </div>
             </div>
          </section>
@@ -173,17 +175,18 @@
                   <img src="./images/new_sub02.avif" alt="배너 작은 이미지1">
                   <figcaption>
                      <p>WOMEN'S SUMMER WEAR</p>
-                     <p>BIG DISCCOUNTS FROM OUR STORE</p>
-                     <p>EXTRA <span>40%</span> OFF</p>
-                     <p>ON ORDERS ABOVE $3,299</p>
+                     <p>For the summer</p>
+                     <p>S/S <span>NEW</span> COLLECTION</p>
+                     <p>FROM GUCCI</p>
                      <button type="button">Shop now</button>
                   </figcaption>
                </figure>
                <figure>
                   <img src="./images/new_sub01.avif" alt="배너 작은 이미지2">
-                  <figcaption>
-                     <p>EXTRA 40% OFF</p>
-                     <p>on Fashion wear</p>
+                  <figcaption class="hide">
+                     detail 
+                     <!-- <p>S/S New collection</p> -->
+                     <!-- <p>on Fashion wear</p> -->
                   </figcaption>
                </figure>
             </div>
@@ -196,18 +199,18 @@
                </h3>
                <ul>
                   <li><a href="#">Clothing</a></li>
-                  <li><a href="#">Footwear</a></li>
+                  <li><a href="#">Shoes</a></li>
+                  <li><a href="#">Wallet</a></li>
                   <li><a href="#">Watches</a></li>
-                  <li><a href="#">Sunglasses</a></li>
                </ul>
                <div class="listForm">
                   <figure>
                      <a href="#"><img src="./images/woman_top01.avif" alt="여성1"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>BLOUSE</dt>
+                           <dd>style 121212</dd>
+                           <dd>$ 1,700 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -216,9 +219,9 @@
                      <a href="#"><img src="./images/woman_top02.avif" alt="여성2"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>BLOUSE</dt>
+                           <dd>style 121212</dd>
+                           <dd>$ 1,700 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -227,9 +230,9 @@
                      <a href="#"><img src="./images/woman_top03.avif" alt="여성3"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>BLOUSE</dt>
+                           <dd>style 121212</dd>
+                           <dd>$ 1,700 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -238,9 +241,9 @@
                      <a href="#"><img src="./images/woman_top04.avif" alt="여성4"></a>
                      <figcaption>
                         <dl>
-                           <dt>Lorem ipsum</dt>
-                           <dd>Lorem ipsum dolor sit amet</dd>
-                           <dd>$ 25.00 ~ $ 29.00</dd>
+                           <dt>BLOUSE</dt>
+                           <dd>style 121212</dd>
+                           <dd>$ 1,700 USD</dd>
                            <dd><button type="button">Add to cart</button></dd>
                         </dl>
                      </figcaption>
@@ -250,7 +253,7 @@
          </section>
       </article>
       <aside id="top">
-         <div><i class="fa-solid fa-chevron-up"></i></div>
+         <div><a href="#"><i class="fa-solid fa-chevron-up"></i></a></div>
       </aside>
       <div id="footer">
          <aside>

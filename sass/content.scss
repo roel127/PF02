@@ -60,6 +60,7 @@
               height: $size-buttonH;
               border: none;
               border-radius: $size-small;
+              color: $color-white;
               background-color: $color-main;
               &:hover{
                 background-color: $color-basic;
@@ -113,7 +114,7 @@
                 }
                 &:last-child{
                   background-color: $color-main;
-                  color: $color-basic;
+                  color: $color-white;
                 }
               }
             }
@@ -177,6 +178,7 @@
         width: $size-buttonW;
         height: $size-buttonH;
         background-color: $color-main;
+        color: $color-white;
         border: none;
         border-radius: $size-small;
       }
@@ -184,7 +186,7 @@
   }
   .box04{}
   .box05{
-    background-color: #4c4c4c;
+    background-color: #161616;
     padding: $size-large*3 0 $size-normal;
     div{
       width: $size-content;
@@ -232,6 +234,7 @@
             width: $size-buttonW;
             height: $size-buttonH;
             background-color: $color-main;
+            color: $color-white;
             border: none;
             border-radius: $size-small;
           }
@@ -242,27 +245,27 @@
           img{
             width: $size-full;
           }
-          figcaption{
-            position: absolute;
-            top: 80%;
-            right: 0;
-            p{
-              &:first-child{
-                font:{
-                  size: $font-big;
-                  weight: bold;
-                };
-                line-height: $size-large * 2;
-                background-color: $color-white;
-              }
-              &:last-child{
-                display: inline-block;
-                font-size: $size-large;
-                line-height: $size-large * 2;
-                background-color: $color-main;
-              }
-            }
-          }
+          // figcaption{
+          //   position: absolute;
+          //   top: 80%;
+          //   right: 0;
+          //   p{
+          //     &:first-child{
+          //       font:{
+          //         size: $font-big;
+          //         weight: bold;
+          //       };
+          //       line-height: $size-large * 2;
+          //       background-color: $color-white;
+          //     }
+          //     &:last-child{
+          //       display: inline-block;
+          //       font-size: $size-large;
+          //       line-height: $size-large * 2;
+          //       background-color: $color-main;
+          //     }
+          //   }
+          // }
         }
       }
     }
